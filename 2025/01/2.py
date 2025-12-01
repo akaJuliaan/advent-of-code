@@ -5,13 +5,13 @@ dial_before = dial
 with open('input.txt', 'r') as file:
    for ln in file:
       line = ln.strip()
-      val = int(line[1:])
+      val = int(line[1:]) % 100
       counter += int(val / 100)
       
       if line.startswith("L"):
-         dial -= val % 100
+         dial -= val
       else:
-         dial += val % 100
+         dial += val
 
       if dial >= 100:
          dial -= 100
@@ -24,7 +24,6 @@ with open('input.txt', 'r') as file:
          counter += 1
 
       dial_before = dial
-      print(val)     
 
 print(f"Pos: {dial}")
 print(f"Counter: {counter}")
