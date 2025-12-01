@@ -5,8 +5,9 @@ dial_before = dial
 with open('input.txt', 'r') as file:
    for ln in file:
       line = ln.strip()
-      val = int(line[1:]) % 100
+      val = int(line[1:])
       counter += int(val / 100)
+      val %= 100
       
       if line.startswith("L"):
          dial -= val
