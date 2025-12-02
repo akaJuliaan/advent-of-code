@@ -16,6 +16,6 @@ with open('input.txt', 'r') as f:
                 if number == str(ID)[i+1:]:
                     print(f"Found invalid ID: {ID}")
                     invalidIDs += ID
-                    continue
+                    break
 
 print(f'Sum of all invalid IDs: {invalidIDs}')
