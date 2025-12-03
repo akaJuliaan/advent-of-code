@@ -16,5 +16,8 @@ advent-of-code/
 │   ├── day02/
 │   │   ├── 1.py
 │   │   └── 2.py
+│   ├── day03/
+│   │   ├── 1.py
+│   │   └── 2.py
 └── README.md
  ```
